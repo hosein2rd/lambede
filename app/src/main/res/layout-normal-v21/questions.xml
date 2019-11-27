@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="چه طوری سفارش تمیز کاری ثبت کنیم؟"
+        android:textColor="#454545"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="از طریق سفارش جدید، نوع سفارش خود را انتخاب کنید و در چند مرحله ساده درخواست خود را ثبت کنید."
+        android:textSize="11sp"
+        android:textColor="#656565" />
+
+</LinearLayout>

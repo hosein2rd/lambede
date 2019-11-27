@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.lambede.lamer.fragments.NewServicesFragment">
+
+    <ImageView
+        android:id="@+id/service_city"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginBottom="60dp"
+        android:alpha="0.08"
+        android:layout_gravity="bottom"
+        android:background="@drawable/city"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/service_waves"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/waves_up" />
+
+        <TextView
+            android:id="@+id/service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="پیشنهاد سرویس"
+            android:textColor="@color/colorLambede"
+            android:textSize="18sp"
+            android:layout_below="@id/service_waves"/>
+
+        <ImageView
+            android:id="@+id/service_gif"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/loader_gif"
+            android:layout_below="@id/service_title"/>
+
+        <TextView
+            android:id="@+id/service_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/service_gif"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/suggest"
+            android:textColor="@color/colorLambede"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/service_suggestion_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/service_content">
+
+            <EditText
+                android:id="@+id/service_suggestion_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="4dp"
+                android:gravity="right"
+                android:background="@color/colorLambede"
+                android:hint="برای مثال باغبانی، سرویس کولر ..."
+                android:textColorHint="@color/colorLambede"
+                android:textColor="@color/colorLambede"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/service_lamp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/lamp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/service_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/service_suggestion_container"
+            android:src="@color/colorLambede" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#F1F1F1">
+
+                <Button
+                    android:id="@+id/service_send_suggestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="56dp"
+                    android:background="@drawable/button_blue"
+                    android:text="ارسال پیشنهاد"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorLambede"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:background="@color/colorLambede"
+        android:visibility="gone"/>
+
+</FrameLayout>

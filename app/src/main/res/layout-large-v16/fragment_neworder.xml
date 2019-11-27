@@ -1,0 +1,281 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/neworder_city"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:alpha="0.2"
+        android:layout_gravity="bottom"
+        android:background="@drawable/city" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/neworder_waves"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/waves_up" />
+
+        <TextView
+            android:id="@+id/neworder_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="نوع سفارش تمیزکاری را تعیین کنید."
+            android:textColor="@color/colorLambede"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="410dp"
+            android:layout_height="355dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/neworder_stairscard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/neworder_stairsimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/stairs" />
+
+                    <TextView
+                        android:id="@+id/neworder_stairstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="راهرو"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/neworder_workcard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/neworder_stairscard"
+                android:layout_toEndOf="@+id/neworder_stairscard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/neworder_workimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/work" />
+
+                    <TextView
+                        android:id="@+id/neworder_worktext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="محل کار"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/neworder_homecard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/neworder_workcard"
+                android:layout_toEndOf="@id/neworder_workcard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/neworder_homeimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/home" />
+
+                    <TextView
+                        android:id="@+id/neworder_hometext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="خانه"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/neworder_carcard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/neworder_carimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/carwash_nano" />
+
+                    <TextView
+                        android:id="@+id/neworder_cartext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="کارواش نانو"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/neworder_suggestcard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/neworder_carcard"
+                android:layout_toStartOf="@id/neworder_carcard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/neworder_suggestimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/add_service" />
+
+                    <TextView
+                        android:id="@+id/neworder_suggesttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/suggest_title"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp"
+                        android:lineSpacingMultiplier="0.8"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

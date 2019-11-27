@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44B2C4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#44B2C4</color>
+    <color name="colorLambede">#329ba6</color>
+    <color name="colorHint">#B4E0E7</color>
+    <color name="colorText">#454545</color>
+    <color name="colorStatusBarDate">#354243</color>
+    <color name="colorStatusBarNormal">#AFD9DE</color>
+    <color name="loadingStatusBar">#d6ebee</color>
+    <color name="white">#FFFFFF</color>
+</resources>

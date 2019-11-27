@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/colorLambede"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/register_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/register_content"
+        android:textColor="@color/colorText"
+        android:textSize="14sp"
+        android:layout_below="@id/register_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"/>
+
+    <LinearLayout
+        android:id="@+id/RegisterNameContainer"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/register_message"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="@string/name_hint"
+            android:inputType="text"
+            android:textColor="@color/colorLambede"
+            android:textColorHint="@color/colorHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/register_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/user"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/register_line1"
+        android:layout_width="265dp"
+        android:layout_height="1dp"
+        app:srcCompat="@color/colorLambede"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RegisterNameContainer"/>
+
+    <LinearLayout
+        android:id="@+id/RegisterPhoneContainer"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/RegisterNameContainer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/register_phonenumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/register_phone_hint"
+            android:inputType="phone"
+            android:gravity="right|center"
+            android:maxLength="11"
+            android:textColor="@color/colorLambede"
+            android:textColorHint="@color/colorHint"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/register_phone_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/register_line2"
+        android:layout_width="265dp"
+        android:layout_height="1dp"
+        app:srcCompat="@color/colorLambede"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RegisterPhoneContainer"/>
+
+    <LinearLayout
+        android:id="@+id/RegisterEmailContainer"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/RegisterPhoneContainer">
+
+        <EditText
+            android:id="@+id/register_mail_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center|right"
+            android:hint="@string/register_email_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorLambede"
+            android:textColorHint="@color/colorHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/register_mail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/mail"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/register_line3"
+        android:layout_width="265dp"
+        android:layout_height="1dp"
+        app:srcCompat="@color/colorLambede"
+        android:layout_below="@id/RegisterEmailContainer"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/register_enter"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_gradient"
+        android:text="@string/register_btn"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_above="@id/register_login"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_to_login"
+        android:textColor="@color/colorLambede"
+        android:textStyle="bold"
+        android:layout_above="@id/register_waves"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/register_waves"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/waves"
+        android:layout_alignParentBottom="true"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorLambede"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:background="@color/colorLambede"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

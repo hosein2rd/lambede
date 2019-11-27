@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.fragments.HistoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/no_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/history_wave2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/waves_up" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/history_no_order"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no_order" />
+
+        <TextView
+            android:id="@+id/history_emty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/history_no_order"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:maxLines="2"
+            android:text="شما تا کنون سفارش تمیزکاری ثبت نکرده اید!"
+            android:textColor="@color/colorLambede"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/history_wave1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/waves_up" />
+
+    <TextView
+        android:id="@+id/history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="سفارشات من"
+        android:layout_gravity="center"
+        android:textColor="@color/colorLambede"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/history_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:src="#dcdcdc"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.fragments.ShareFragment">
+
+    <ImageView
+        android:id="@+id/share_waves"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/waves_up" />
+
+
+    <TextView
+        android:id="@+id/share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="معرفی به دوستان"
+        android:textColor="@color/colorLambede"
+        android:textSize="18sp"
+        android:layout_below="@id/share_waves"/>
+
+    <ImageView
+        android:id="@+id/share_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/share_pattern"
+        android:layout_below="@id/share_title"/>
+
+    <TextView
+        android:id="@+id/share_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/share_pattern"
+        android:gravity="center"
+        android:text="ما را به دوستان، همکاران و اطرافیان خود معرفی کنید تا از خدمات ما بهره مند شوند."
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/share_invite"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_gradient"
+        android:text="ارسال لینک دعوت"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/share_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="لم بده نسخه 2.0.0"
+        android:textColor="@color/colorLambede"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

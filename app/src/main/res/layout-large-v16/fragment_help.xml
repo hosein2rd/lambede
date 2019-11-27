@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.fragments.HelpFragment">
+
+    <ImageView
+        android:id="@+id/help_waves"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/waves_up" />
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="راهنمای استفاده"
+        android:textColor="@color/colorLambede"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/help_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="سوالاتی که ممکن است برای شما پیش آمده باشد، در این بخش پاسخ داده شده است:"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/help_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/help_pattern" />
+
+    <ImageView
+        android:id="@+id/help_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:src="#dcdcdc"  />
+
+    <ListView
+        android:id="@+id/help_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent" />
+</LinearLayout>

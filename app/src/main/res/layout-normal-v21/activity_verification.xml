@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.activities.VerificationActivity">
+
+    <TextView
+        android:id="@+id/verification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_title"
+        android:textColor="@color/colorLambede"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/verification_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/verification_content"
+        android:textColor="@color/colorText"
+        android:textSize="14sp"
+        android:layout_below="@id/verification_title"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/verification_message"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/verification_number1"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:textColor="@color/colorLambede"
+            android:maxLength="1"
+            android:backgroundTint="@color/colorLambede" />
+
+        <EditText
+            android:id="@+id/verification_number2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:textColor="@color/colorLambede"
+            android:maxLength="1"
+            android:backgroundTint="@color/colorLambede" />
+
+        <EditText
+            android:id="@+id/verification_number3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:textColor="@color/colorLambede"
+            android:maxLength="1"
+            android:backgroundTint="@color/colorLambede" />
+
+        <EditText
+            android:id="@+id/verification_number4"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:textColor="@color/colorLambede"
+            android:maxLength="1"
+            android:backgroundTint="@color/colorLambede"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verification_message" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verification_enter"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_gradient"
+        android:text="تأیید شماره"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_above="@id/verification_retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/verification_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ارسال مجدد کد"
+        android:textColor="@color/colorLambede"
+        android:textSize="14sp"
+        android:layout_above="@id/verification_waves"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/verification_waves"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/waves"
+        android:layout_alignParentBottom="true"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorLambede"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:background="@color/colorLambede"
+        android:visibility="gone"/>
+
+</RelativeLayout>

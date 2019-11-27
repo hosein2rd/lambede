@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lambede.lamer">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+
+    <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="329ba6" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".utilities.AnalyticsApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_lambede"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_lambede"
+        android:supportsRtl="false"
+        android:theme="@style/WaveDown" >
+        <activity android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activities.StartActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/WaveDown" />
+        <activity
+            android:name=".activities.PhoneNumberActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/WaveDown" />
+        <activity
+            android:name=".activities.VerificationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/WaveDown" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/WaveDown" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/WaveUp" />
+
+        <activity
+            android:theme="@style/WaveUp"
+            android:name=".activities.FailActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="lambede" android:host="lambede.com"
+                    android:pathPrefix="/failure"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activities.SuccessActivity"
+            android:theme="@style/WaveUp">
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="lambede" android:host="lambede.com" android:pathPrefix="/success"/>
+
+            </intent-filter>
+
+
+        </activity>
+
+    </application>
+
+</manifest>

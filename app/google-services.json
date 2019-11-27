@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "65047526803",
+    "firebase_url": "https://lambede-a9ee4.firebaseio.com",
+    "project_id": "lambede-a9ee4",
+    "storage_bucket": "lambede-a9ee4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65047526803:android:0cfbee80d0b20b4d",
+        "android_client_info": {
+          "package_name": "com.lambede.lamer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65047526803-n5rujc0o4cek15u4arobvh7auejnnmgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyhrY_5ozhJlMK2pyK0AuwePoVkTwtySU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

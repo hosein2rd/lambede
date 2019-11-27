@@ -1,0 +1,443 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.lambede.lamer.fragments.FirstStairsFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/city"
+        android:alpha="0.08"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/first_stairs_waves"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/waves_up" />
+
+        <TextView
+            android:id="@+id/first_stairs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="اطلاعات راهرو"
+            android:textColor="@color/colorLambede"
+            android:textSize="24sp"
+            android:layout_below="@id/first_stairs_waves"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/first_stairs_sizetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="24dp"
+            android:text="متراژ طبقه:"
+            android:textColor="@color/colorLambede"
+            android:textSize="20sp"
+            android:layout_below="@id/first_stairs_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/first_stairs_sizes"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_stairs_sizetitle"
+            android:layout_centerHorizontal="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_stairs_scard"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/first_stairs_slayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_stairs_stitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="نقلی"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_stairs_simage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="S"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="32sp"/>
+
+                    <TextView
+                        android:id="@+id/first_stairs_stext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="1 یا 2 واحد"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_stairs_mcard"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/first_stairs_mlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_stairs_mtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="متوسط"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_stairs_mimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="M"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/first_stairs_mtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="3 تا 5 واحد"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_stairs_lcard"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/first_stairs_llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_stairs_ltitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="بزرگ"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_stairs_limage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="XL"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/first_stairs_ltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="5 واحد به بالا"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/first_stairs_floortitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="24dp"
+            android:text="تعداد طبقات: "
+            android:textColor="@color/colorLambede"
+            android:textSize="20sp"
+            android:layout_below="@id/first_stairs_sizes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/first_stairs_minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="-"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/circle_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/first_stairs_sizes" />
+
+        <TextView
+            android:id="@+id/first_stairs_floor"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="3 طبقه"
+            android:textColor="@color/colorText"
+            android:background="@drawable/shape_back"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/first_stairs_minus"
+            android:layout_toEndOf="@id/first_minus"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_below="@id/first_stairs_sizes"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/first_stairs_plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circle_button"
+            android:layout_toRightOf="@id/first_stairs_floor"
+            android:layout_toEndOf="@id/first_stairs_floor"
+            android:layout_below="@id/first_stairs_sizes"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/first_stairs_datetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="32dp"
+            android:text="تاریخ تمیزکاری:"
+            android:textColor="@color/colorLambede"
+            android:textSize="20sp"
+            android:layout_below="@+id/first_stairs_floortitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/first_stairs_datetext"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="برای انتخاب تاریخ لمس کنید"
+            android:textColor="@color/colorText"
+            android:background="@drawable/shape_back"
+            android:textSize="20sp"
+            android:layout_below="@id/first_stairs_floortitle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1">
+
+            <TextView
+                android:id="@+id/first_stairs_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/first_stairs_button"
+                android:layout_toStartOf="@id/first_stairs_button"
+                android:text="قیمت: 69,000 تومان"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/first_stairs_button"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/button_blue">
+
+                <TextView
+                    android:id="@+id/first_stairs_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="ادامه"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/first_stairs_buttonimage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginStart="85dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/first_stairs_darkback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:clickable="true"
+        android:src="@android:color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/first_stairs_wheel_container"
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:background="@drawable/wheelpicker_back"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/first_stairs_wheeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="تاریخ تمیزکاری را انتخاب کنید."
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/first_stairs_maintimewheel"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/first_stairs_wheeltitle"
+            android:layout_marginTop="8dp"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/colorText"
+            app:wheel_indicator_size="0.5dp"
+            app:wheel_item_space="40dp"
+            app:wheel_item_text_color="#AEAEAE"
+            app:wheel_item_text_size="20sp"
+            app:wheel_selected_item_text_color="#454545"
+            app:wheel_visible_item_count="4" />
+
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_stairs_maintimewheel"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/first_stairs_timeaccept"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/date_accept"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/first_stairs_timereject"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/date_reject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

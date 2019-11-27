@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Lambede</string>
+
+    <string name="title_neworder">سفارش جدید</string>
+    <string name="title_history">تاریخچه</string>
+    <string name="title_profile">پروفایل</string>
+    <string name="suggest_title">پیشنهاد\nسرویس</string>
+    <string name="no_diff">تفاوتی ندارد</string>
+    <string name="suggest">دوس دارین چه سرویس دیگه\u200cای به لیست خدمات لم\u200cبده اضافه بشه؟ ما منتظر نظرات خوبتون هستیم!</string>
+    <string name="error">خطا!</string>
+    <string name="message">پیام</string>
+    <string name="ok">باشه</string>
+    <string name="yes">بله</string>
+    <string name="no">نه</string>
+    <string name="logout">خروج از حساب</string>
+    <string name="attention">توجه!</string>
+
+    <string name="fail_content">مشکلی در پرداخت فرایند شما صورت گرفته است. در صورتی که وجه از حساب شما کسر شده، تا 72 ساعت آینده از بانک عودت داده میشود.</string>
+    <string name="fail_title">پرداخت ناموفق !</string>
+    <string name="back_home">بازگشت به خانه</string>
+    <string name="call">تماس با پشتیبانی</string>
+
+    <string name="phone_title">ورود شماره موبایل</string>
+    <string name="phone_content">برای ورود به لم بده، شماره موبایل خود را وارد کنید تا کد تأیید برای شما ارسال شود.</string>
+    <string name="phone_btn">ورود با موبایل</string>
+    <string name="phone_hint">برای مثال: *******0912</string>
+
+    <string name="register">ثبت نام</string>
+    <string name="register_content">برای استفاده از خدمات لم بده، فرم زیر را پر کرده و دکمه ثبت نام را لمس کنید.</string>
+    <string name="name_hint">نام و نام خانوادگی</string>
+    <string name="register_phone_hint">شماره موبایل</string>
+    <string name="register_email_hint">ایمیل</string>
+    <string name="register_btn">ثبت نام</string>
+    <string name="register_to_login">حساب کاربری دارید؟ ورود</string>
+
+    <string name="splash_content">سرویس سفارش آنلاین\nخدمات خانگی</string>
+    <string name="splash_internet_error">خطا در اتصال به اینترنت!</string>
+    <string name="splash_retry">تلاش مجدد</string>
+
+    <string name="start_content">با اپلیکیشن لم بده میتوانید به راحتی و در چند مرحله برای خانه، محل کار و یا راهروی خود، خدمات نظافتی سفارش دهید.</string>
+    <string name="start_btn">شروع</string>
+
+    <string name="success_title">پرداخت با موفقیت انجام شد :)</string>
+    <string name="success_content">از اعتماد شما متشکریم. همکاران ما در واحد پشتیبانی بزودی با شما تماس میگیرند.</string>
+
+    <string name="verification_title">کد پیامک شده را وارد کنید.</string>
+    <string name="verification_content">درصورتی که تا 1 دقیقه دیگر، پیامک به موبایل شما ارسال نشد، دکمه ارسال مجدد را لمس کنید.</string>
+
+    <string name="internet_error">خطای اتصال</string>
+
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+    
+    <!--content popup-->
+    <string name="connect_error">لطفاً اتصال خود را بررسی کنید.</string>
+    <string name="is_not_registered">شماره شما در سیستم ثبت نشده است.</string>
+    <string name="valid_inset">لطفاً شماره موبایل خود را به درستی وارد کنید.</string>
+    <string name="input_data">لطفاً ابتدا شماره موبایل خود را وارد کنید.</string>
+    <string name="invalid_email_mobile">ایمیل و شماره موبایل شما نامعتبر میباشد.</string>
+    <string name="exist_number">شماره ای که وارد کرده اید در سیستم وجود دارد.</string>
+    <string name="invalid_number">شماره موبایل نامعتبر میباشد.</string>
+    <string name="invalid_mail">ایمیل شما نامعتبر میباشد.</string>
+    <string name="compelete_field">لطفاً تمامی فیلد ها را پر کنید.</string>
+    <string name="get_code_again">کد تایید مجددا ارسال شد.</string>
+    <string name="invalid_code">کد وارد شده نامعتبر است.</string>
+    <string name="inset_correctly">لطفاً کد پیامک شده به شماره موبایل خود را به صورت کامل وارد کنید.</string>
+    <string name="no_change">تغییری انجام نشده است.</string>
+    <string name="changed_successfuly">تغییرات شما با موفقیت ثبت شد!</string>
+    <string name="exit_from_acc">آیا میخواهید از حساب لم بده خود خارج شوید؟</string>
+    <string name="enter_model">لطفاً مدل خودرو را وارد کنید.</string>
+    <string name="enter_voucher">لطفاً ابتدا کد تخفیف را وارد کنید.</string>
+    <string name="empty_address">لطفاً آدرس خود را به طور دقیق وارد کنید.</string>
+    <string name="voucher">کد تخفیف اعمال شد.</string>
+    <string name="invalid_voucher_code">کد تخفیف نامعتبر میباشد!</string>
+    <string name="enter_suggest">لطفاً پیشنهاد خود را وارد کنید.</string>
+    <string name="suggestion_successfuly">پیشنهاد شما با موفقیت ارسال شد.</string>
+    
+</resources>

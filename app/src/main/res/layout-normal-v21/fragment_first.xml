@@ -1,0 +1,370 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.lambede.lamer.fragments.FirstFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/city"
+        android:alpha="0.08"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/first_waves"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/waves_up" />
+
+        <ImageView
+            android:id="@+id/first_progress"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/first"
+            android:layout_below="@id/first_waves"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="اطلاعات واحد"
+            android:textColor="@color/colorLambede"
+            android:textSize="18sp"
+            android:layout_below="@id/first_progress"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/first_sizetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:text="متراژ واحد:"
+            android:textColor="@color/colorLambede"
+            android:textSize="14sp"
+            android:layout_below="@id/first_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/first_sizes"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_sizetitle"
+            android:layout_centerHorizontal="true">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_scard"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/first_slayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_stitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="نقلی"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_simage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="S"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:id="@+id/first_stext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="40 تا 80 متر"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_mcard"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/first_mlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_mtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="متوسط"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_mimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="M"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/first_mtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="80 تا 120 متر"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="10sp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_lcard"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/first_llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_ltitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="بزرگ"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/first_limage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="XL"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/first_ltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="120 متر به بالا"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/first_sizes">
+
+            <TextView
+                android:id="@+id/first_hourtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="مدت تمیزکاری:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/first_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="-"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/circle_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/first_hour"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:text="4 ساعت"
+                android:textColor="@color/colorText"
+                android:background="@drawable/shape_back"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/first_minus"
+                android:layout_toEndOf="@id/first_minus"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/first_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle_button"
+                android:layout_toRightOf="@id/first_hour"
+                android:layout_toEndOf="@id/first_hour"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/first_texthint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="حداقل زمان تمیزکاری بر اساس متراژ واحد شما 4 ساعت می باشد."
+            android:textColor="@color/colorLambede"
+            android:textSize="10sp"
+            android:layout_below="@id/first_time_container"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1">
+
+            <TextView
+                android:id="@+id/first_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/first_button"
+                android:layout_toStartOf="@id/first_button"
+                android:text="قیمت: 69,000 تومان"
+                android:textColor="@color/colorText"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:id="@+id/first_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_blue">
+
+                <TextView
+                    android:id="@+id/first_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="ادامه"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/first_buttonimage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

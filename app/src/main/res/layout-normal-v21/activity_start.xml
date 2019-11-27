@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.activities.StartActivity">
+
+    <ImageView
+        android:id="@+id/start_logo"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/lambede_logotype"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:id="@+id/start_washingmachine"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/washing_machine"
+        android:layout_below="@id/start_logo"/>
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/start_content"
+        android:textColor="@color/colorText"
+        android:textSize="14sp"
+        android:layout_below="@id/start_washingmachine"/>
+
+
+    <Button
+        android:id="@+id/start_enter"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_gradient"
+        android:text="@string/start_btn"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_above="@id/start_waves"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/start_waves"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/waves"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,448 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.lambede.lamer.fragments.SecondFragment">
+
+    <ImageView
+        android:id="@+id/second_city"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:alpha="0.08"
+        android:background="@drawable/city"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/second_waves"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/waves_up" />
+
+        <ImageView
+            android:id="@+id/second_progress"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/second"
+            android:layout_below="@id/second_waves"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="اطلاعات سفارش"
+            android:textColor="@color/colorLambede"
+            android:textSize="18sp"
+            android:layout_below="@id/second_progress"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/second_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/second_title"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/second_datetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="تاریخ تمیزکاری:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+
+            <TextView
+                android:id="@+id/second_datetext"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="-- برای انتخاب تاریخ لمس کنید --"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_back"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/second_sextitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:text="جنسیت"
+            android:textColor="@color/colorLambede"
+            android:textSize="14sp"
+            android:layout_below="@id/second_date_container"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/second_sextitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:text="متخصص:"
+            android:textColor="@color/colorLambede"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/second_sextitle1"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/second_ncard"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_below="@id/second_date_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/second_nlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/second_ntext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="@string/no_diff"
+                    android:textColor="@color/colorLambede"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/second_fcard"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_below="@id/second_date_container"
+            android:layout_toRightOf="@id/second_ncard"
+            android:layout_toEndOf="@id/second_ncard">
+
+            <LinearLayout
+                android:id="@+id/second_flayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/second_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/female_cyan"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/second_ftext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:text="خانم"
+                    android:textColor="@color/colorLambede"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/second_mcard"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_below="@id/second_date_container"
+            android:layout_toRightOf="@id/second_fcard"
+            android:layout_toEndOf="@id/second_fcard">
+
+            <LinearLayout
+                android:id="@+id/second_mlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/second_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/male_cyan"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/second_mtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:text="آقا"
+                    android:textColor="@color/colorLambede"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/second_sextitle2"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:id="@+id/second_lamertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text=" تعداد متخصص:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/second_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/circle_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/second_lamer"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="1 متخصص"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/second_minus"
+                android:layout_toEndOf="@id/second_minus"
+                android:background="@drawable/shape_back"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"/>
+
+
+            <Button
+                android:id="@+id/second_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/circle_button"
+                android:layout_toRightOf="@id/second_lamer"
+                android:layout_toEndOf="@id/second_lamer"
+                android:text="+"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1">
+
+            <TextView
+                android:id="@+id/second_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/second_button"
+                android:text="قیمت: 69,000 تومان"
+                android:textColor="@color/colorText"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"/>
+
+            <FrameLayout
+                android:id="@+id/second_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_blue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:id="@+id/second_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="ادامه"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/second_buttonimage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/second_darkback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:clickable="true"
+        android:src="@android:color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/second_wheel_container"
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/wheelpicker_back"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/second_wheeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="تاریخ تمیزکاری را انتخاب کنید."
+            android:textColor="@color/colorText"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/second_maintimewheel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/second_wheeltitle"
+            android:layout_marginTop="8dp"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/colorText"
+            app:wheel_indicator_size="0.5dp"
+            app:wheel_item_space="40dp"
+            app:wheel_item_text_color="#AEAEAE"
+            app:wheel_item_text_size="14sp"
+            app:wheel_selected_item_text_color="#454545"
+            app:wheel_visible_item_count="4" />
+
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_maintimewheel"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/second_timeaccept"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/date_accept"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/second_timereject"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/date_reject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+

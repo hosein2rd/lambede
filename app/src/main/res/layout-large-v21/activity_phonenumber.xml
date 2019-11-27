@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.activities.PhoneNumberActivity">
+
+    <TextView
+        android:id="@+id/phonenumber_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_title"
+        android:textColor="@color/colorLambede"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/phonenumber_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/phone_content"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/phonenumber_message"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/phonenumber_phonnumber"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColorHint="@color/colorHint"
+            android:textSize="20sp"
+            android:textColor="@color/colorLambede" />
+
+        <ImageView
+            android:id="@+id/phonenumber_phon_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/phone"
+            android:layout_toRightOf="@id/phonenumber_phonnumber"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/phonenumber_tick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/check_cyan"
+            android:layout_toLeftOf="@id/phonenumber_phonnumber"
+            android:layout_toStartOf="@id/phonenumber_phonnumber"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/phonenumber_line"
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            app:srcCompat="@color/colorLambede"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/phonenumber_phonnumber"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/phonenumber_enter"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_gradient"
+        android:text="@string/phone_title"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_above="@id/phonenumber_waves"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/phonenumber_waves"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/waves"
+        android:layout_alignParentBottom="true"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorLambede"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:background="@color/colorLambede"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.lambede.lamer.fragments.ThirdFragment">
+
+    <ImageView
+        android:id="@+id/third_city"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:alpha="0.08"
+        android:background="@drawable/city"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/third_waves"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/waves_up" />
+
+        <ImageView
+            android:id="@+id/third_progress"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/third"
+            android:layout_below="@id/third_waves"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/third_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="سایر خدمات"
+            android:textColor="@color/colorLambede"
+            android:textSize="18sp"
+            android:layout_below="@id/third_progress"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/third_cabinet_container"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/third_title">
+
+            <TextView
+                android:id="@+id/third_cabinet-title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="تمیزکاری داخل کابینت:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/third_cabinet_card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/third_cabinet_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/cabinet_false" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/third_cabinet_tick"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/check_gray"
+                android:layout_toRightOf="@id/third_cabinet_card"
+                android:layout_toEndOf="@id/third_cabinet_card"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_fridge_container"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/third_cabinet_container">
+
+            <TextView
+                android:id="@+id/third_frige_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:text="تمیزکاری داخل یخچال فریزر:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/third_frige_card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/third_frige_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/fridge_false" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/third_frige_tick"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check_gray"
+                android:layout_toRightOf="@id/third_frige_card"
+                android:layout_toEndOf="@id/third_frige_card" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_furniture_container"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/third_fridge_container">
+
+            <TextView
+                android:id="@+id/third_furniture_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="جابجایی وسایل:"
+                android:textColor="@color/colorLambede"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/third_furniture_card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/third_furniture_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/furniture_false" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/third_furniture_tick"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check_gray"
+                android:layout_toRightOf="@id/third_furniture_card"
+                android:layout_toEndOf="@id/third_furniture_card" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f1f1f1">
+
+            <TextView
+                android:id="@+id/third_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/third_button"
+                android:text="قیمت: 69,000 تومان"
+                android:textColor="@color/colorText"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"/>
+
+            <FrameLayout
+                android:id="@+id/third_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_blue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:id="@+id/third_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="ادامه"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/third_buttonimage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

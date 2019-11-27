@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.lambede.lamer.fragments.EditFragment">
+
+    <ImageView
+        android:id="@+id/edit_waves"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/waves_up"/>
+
+    <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/edit_waves"
+        android:layout_centerHorizontal="true"
+        android:text="مشخصات من"
+        android:textColor="@color/colorLambede"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/edit_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="30dp"
+        android:text="نام و نام خانوادگی :"
+        android:textColor="@color/colorLambede"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edit_name_text"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:inputType="text"
+            android:hint="نام و نام خانوادگی"
+            android:text="حامد جواهری"
+            android:textColor="@color/colorLambede"
+            android:textColorHint="@color/colorHint"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit_user"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/name_container"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@color/colorLambede" />
+
+    <TextView
+        android:id="@+id/edit_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_container"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="24dp"
+        android:text="شماره موبایل :"
+        android:textColor="@color/colorLambede"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/edit_phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edit_phonenumber"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/edit_phonenumber_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:text="09104223456"
+            android:textColor="@color/colorHint"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit_phone_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/phone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_phone_container"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@color/colorLambede" />
+
+    <TextView
+        android:id="@+id/edit_email_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_phone_container"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="24dp"
+        android:text="ایمیل:"
+        android:textColor="@color/colorLambede"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/edit_email_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edit_email_text_title"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/edit_mail_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"
+            android:text="lambede.app@gmail.com"
+            android:textColor="@color/colorLambede"
+            android:textColorHint="@color/colorHint"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit_mail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/mail"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/edit_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:srcCompat="@color/colorLambede"
+        android:layout_below="@id/edit_email_container"/>
+
+    <Button
+        android:id="@+id/edit_set"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_above="@id/logout_container"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue"
+        android:text="ثبت تغییرات"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/logout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/edit_logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="خروج از حساب کاربری"
+            android:textColor="#ff8167"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit_logout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logout"
+            android:layout_toRightOf="@id/edit_logout_text"
+            android:layout_toEndOf="@id/edit_logout_text"/>
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorLambede"
+        app:indicatorName="BallScaleMultipleIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:background="@color/colorLambede"
+        android:visibility="gone"/>
+
+</RelativeLayout>

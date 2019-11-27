@@ -1,0 +1,456 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.lambede.lamer.fragments.FirstCarWashFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/city"
+        android:alpha="0.08"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/firstcarwash_waves"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/waves_up" />
+
+        <TextView
+            android:id="@+id/firstcarwash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="اطلاعات سفارش"
+            android:textColor="@color/colorLambede"
+            android:textSize="24sp"
+            android:layout_below="@id/firstcarwash_waves"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/firstcarwash_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/firstcarwash_title"
+            android:layout_marginTop="8dp"
+            android:text="نوع سفارش:"
+            android:gravity="right"
+            android:textColor="@color/colorLambede"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/firstcarwash_sizes"
+            android:layout_width="440dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/firstcarwash_titles"
+            android:layout_centerHorizontal="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcarwash_scard"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/firstcarwash_slayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstcarwash_stitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:text="روشویی"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/firstcarwash_stext"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="نظافت بدنه، شیشه ها، واکس چرخ ها"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcarwash_mcard"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/firstcarwash_mlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstcarwash_mtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:text="روشویی و توشویی"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/firstcarwash_mtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="روشویی، جاروبرقی داخل، کفپوش ها و واکس داشبورد"
+                        android:gravity="center"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcarwash_lcard"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/firstcarwash_llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstcarwash_ltitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:text="سرویس VIP"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/firstcarwash_ltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="4dp"
+                        android:text="روشویی و توشویی، شستشو نانو صندلی ها و سقف داخلی"
+                        android:gravity="center"
+                        android:textColor="@color/colorLambede"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstcarwash_sizes"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorLambede"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:text="تمامی سرویس ها بدون آب و با استفاده از مواد نانو می باشد." />
+
+        <RelativeLayout
+            android:id="@+id/firstcarwash_hour_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/textView">
+
+            <TextView
+                android:id="@+id/firstcarwash_hourtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:text="تاریخ تمیزکاری:"
+                android:textColor="@color/colorLambede"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/firstcarwash_hour"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="برای انتخاب تاریخ لمس کنید"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape_back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/firstcarwash_hour_container">
+
+            <TextView
+                android:id="@+id/firstcarwash_modeltitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:text="مدل خودرو:"
+                android:textColor="@color/colorLambede"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <EditText
+                android:id="@+id/firstcarwash_model"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:hint=" مدل خودرو خود را وارد کنید "
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:maxLines="1"
+                android:background="@drawable/shape_back" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1">
+
+            <TextView
+                android:id="@+id/firstcarwash_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@id/firstcarwash_button"
+                android:text="قیمت: 69,000 تومان"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/firstcarwash_button"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/button_blue">
+
+                <TextView
+                    android:id="@+id/firstcarwash_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:text="ادامه"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/firstcarwash_buttonimage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginStart="85dp"
+                    android:src="@drawable/arrow" />
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/second_darkback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:clickable="true"
+        android:src="@android:color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/second_wheel_container"
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:background="@drawable/wheelpicker_back"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/second_wheeltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="تاریخ تمیزکاری را انتخاب کنید."
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/second_wheeltitle">
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/second_maintimewheel"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_curved="true"
+                app:wheel_cyclic="false"
+                app:wheel_indicator="true"
+                app:wheel_indicator_color="@color/colorText"
+                app:wheel_indicator_size="0.5dp"
+                app:wheel_item_space="40dp"
+                app:wheel_item_text_color="#AEAEAE"
+                app:wheel_item_text_size="20sp"
+                app:wheel_selected_item_text_color="#454545"
+                app:wheel_visible_item_count="4" />
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/second_maintimewheel2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:wheel_atmospheric="true"
+                app:wheel_curved="true"
+                app:wheel_cyclic="false"
+                app:wheel_indicator="true"
+                app:wheel_indicator_color="@color/colorText"
+                app:wheel_indicator_size="0.5dp"
+                app:wheel_item_space="40dp"
+                app:wheel_item_text_color="#AEAEAE"
+                app:wheel_item_text_size="20sp"
+                app:wheel_selected_item_text_color="#454545"
+                app:wheel_visible_item_count="4" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/second_timeaccept"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/date_accept"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/second_timereject"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/date_reject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

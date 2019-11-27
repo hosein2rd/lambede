@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.lambede.lamer.activities.FailActivity">
+
+    <ImageView
+        android:id="@+id/fail_waves"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/waves_up" />
+
+    <ImageView
+        android:id="@+id/fail_vector"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/failed_vector"
+        android:layout_below="@id/fail_waves"/>
+
+    <TextView
+        android:id="@+id/fail_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/fail_title"
+        android:gravity="center"
+        android:textColor="#ff795e"
+        android:textSize="16sp"
+        android:layout_below="@id/fail_vector"/>
+
+    <ImageView
+        android:id="@+id/fail_image_gif"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/failed_gif"
+        android:layout_below="@id/fail_text_title"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/fail_content"
+        android:textColor="@color/colorText"
+        android:textSize="14sp"
+        android:layout_below="@id/fail_image_gif"/>
+
+    <TextView
+        android:id="@+id/fail_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/call"
+        android:textColor="@color/colorLambede"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/fail_home_button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/back_home"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_above="@id/fail_support"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
